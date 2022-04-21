@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     }
     
     
-
+    // Starts The 15 games Rounds
     @IBAction func playClicked(_ sender: Any) {
         panel_BTN_play.isEnabled = false;
         
@@ -56,17 +56,21 @@ class ViewController: UIViewController {
                 panel_BTN_play.isEnabled = true;
             }
         }
-                
-
     }
     
+    //Initiate all initial vars and views for an all new 15 games round
     func initGame(){
         game_counter = 0
         panel_LBL_game_counter.text = "Game \(game_counter) / 15"
+        score1 = 0
+        score2 = 0
+        panel_LBL_score_left.text = "\(score1)"
+        panel_LBL_score_right.text = "\(score2)"
         panel_IMG_left_profile.image = #imageLiteral(resourceName: "player")
-        panel_IMG_left_profile.image = #imageLiteral(resourceName: "player")
+        panel_IMG_right_profile.image = #imageLiteral(resourceName: "player")
     }
     
+    //Play Single Round
     func playRound() {
         
         let IMAGES = [#imageLiteral(resourceName: "rock"), #imageLiteral(resourceName: "paper2"), #imageLiteral(resourceName: "scissors")]
@@ -86,27 +90,29 @@ class ViewController: UIViewController {
         panel_LBL_game_counter.text = "Game \(game_counter) / 15"
     }
     
+    // Check winner in a single game - The Game Logic
     func checkWinner(left: Int, right: Int) -> Int {
         if(left == right){
             return 0; // Tie Tie
         } else if (left == 0 && right == 2) {
             return 1; // Left Wins
         } else if (left == 2 && right == 0){
-            return 2;
+            return 2;// Right Wins
         } else if (left > right) {
-            return 1;
+            return 1; // Left Wins
         } else{
-            return 2;
+            return 2; //Right Wins
         }
     }
     
+    //Check The Winner in the 15 games round and change his profile picture to the Winner Crown.
     func checkOVERALLWinner(left: Int, right: Int) {
         if(left > right){
             panel_IMG_left_profile.image = #imageLiteral(resourceName: "winner")
         }else if (left < right){
             panel_IMG_right_profile.image = #imageLiteral(resourceName: "winner")
         } else {
-            
+            // It's A Tie No Winner
         }
     }
     
