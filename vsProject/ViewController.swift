@@ -17,9 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var panel_BTN_play: UIButton!
     @IBOutlet weak var panel_IMG_left_profile: UIImageView!
     @IBOutlet weak var panel_IMG_right_profile: UIImageView!
-
+    @IBOutlet weak var panel_LBL_player1: UILabel!
+    @IBOutlet weak var panel_LBL_player2: UILabel!
+    
     var panels: [UIImageView]!
     
+    var player1_name:String?
+    var player2_name:String?
     var score1: Int = 0
     var score2: Int = 0
     var game_counter: Int = 0
@@ -28,6 +32,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        panel_LBL_player1.text = player1_name
+        panel_LBL_player2.text = player2_name
         initGame()
         panel_IMG_left.transform = CGAffineTransform(scaleX: -1, y: 1);
         panels = [panel_IMG_left, panel_IMG_right]
