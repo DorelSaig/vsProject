@@ -10,11 +10,30 @@ Description:
 
 ![Simulator Screen Shot - iPhone 11 - 2022-04-24 at 20 12 37](https://user-images.githubusercontent.com/62397127/164996367-0f1e351b-22b3-4f17-85d0-1ad24e3fa458.png)
 
+</br>
+</br>
+
+
+Demo:
+-
+> <p align="center">
+>  <img src="https://user-images.githubusercontent.com/62397127/165043141-67861b62-fa72-44ac-b29a-69506352acfe.gif" border="10"/>  
+>  </p>
+
+
+</br>
+</br>
+
+
 Rules:
 -
 >  | __Scissors__ >| __Paper__ >| __Rock__ >|
 >  |:---:|:---:|:---:|
 >  | <img src="https://user-images.githubusercontent.com/62397127/164997988-97032f74-f1be-4a46-9b51-494e07ab5d6e.png" width="100" height="100" border="10"/> | <img src="https://user-images.githubusercontent.com/62397127/164998031-dc1cc0ad-a462-4179-a1e9-02c007608f28.png" width="100" height="100" border="10"/> |  <img src="https://user-images.githubusercontent.com/62397127/164998064-67253cb4-fdf7-4268-a3bc-304e4bee3ef4.png" width="100" height="100" border="10"/> |
+
+
+</br>
+</br>
 
 How To Play:
 -
@@ -42,7 +61,9 @@ How To Play:
 >
 >![Simulator Screen Shot - iPhone 11 - 2022-04-24 at 20 13 45](https://user-images.githubusercontent.com/62397127/164996331-9dc28f28-785b-452d-bbd1-7a228bfb9601.png)
 
+
 > Hint: If you want to play again(Or as we say bakshish), just press the play button :wink:
+
 
 # Enjoy!
 
